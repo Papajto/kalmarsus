@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KALMARS.US</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #ff6600;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      min-height: 4.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: none;
+      animation: none;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 300px;
+      max-width: 100%;
+      border: 5px solid #ff6600;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+    }
+
+    .wallets {
+      text-align: left;
+      display: inline-block;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background-color: #111111;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .wallets code {
+      word-break: break-all;
+      display: block;
+      color: #ff8800;
+    }
+
+    .socials {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .socials a {
+      color: #ff6600;
+      text-decoration: none;
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 0.8rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="typing-title"></h1>
+
+    <div class="subtitle">About me:</div>
+
+    <p>
+      I'm <strong>Kalmarsus</strong> / <strong>Papajto</strong> / <strong>Ali Abdelaziz</strong>.  
+      I'm a mechatronics student from Poland and an infamous pornographic hacker <em>(iykyk)</em>.
+    </p>
+    <p>
+      I believe in sovereignty through privacy -- in systems that serve the individual, not the corporation.  
+      I reject centralized control by tech giants like Meta, Microsoft, and Google.  
+      I believe in freedom, decentralization, and financial privacy -- values embodied in true cryptocurrencies like <strong>Monero</strong>.
+    </p>
+    <p>
+      My interests are <strong>aviation</strong>, <strong>cryptocurrency</strong>, and <strong>technology</strong>.  
+      I previously used this website only for my email address domain, but I decided to put it to use as a biography site.  
+      It's not perfect because I don’t have much time to code it, but it does the job.
+    </p>
+    <p>
+      If you stand for digital freedom, resilience, and the grind --  
+      <strong>donate crypto</strong>, or just keep watching.
+    </p>
+
+    <img src="image.png" alt="My Image" />
+
+    <div class="wallets">
+      <strong>Donate Crypto:</strong><br />
+      <strong>BTC:</strong> <code>bc1qcvw06hhp6cdz5gr6axzyt7hhkkt6cpf9cueahh</code>
+      <strong>XMR:</strong> <code>42PLa1peDDe866JdfGwky31EJTAtumb4WPmpz2HGRADcN63unXZypg1cnLnUdASvBm2yL6pkdNJyDZbBy5M7jaXoUqLyzvm</code>
+      <strong>SOL:</strong> <code>6XVxm1MH632hW1r83HDbT8SQZ7JEyNTHc49ELDiXV8Jq</code>
+      <strong>ETH:</strong> <code>0xab6941d98422919006C26Cc1281b4db57d75b871</code>
+    </div>
+
+    <div class="socials">
+      <strong>Find me online:</strong><br />
+      Discord: <a href="#">@papajto</a><br />
+      Telegram: <a href="https://t.me/papajto">@papajto</a>
+    </div>
+  </div>
+
+  <script>
+    const text = "KALMARS.US";
+    const title = document.getElementById('typing-title');
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        title.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 150);
+      }
+    }
+
+    window.onload = () => {
+      type();
+    };
+  </script>
+</body>
+</html>
